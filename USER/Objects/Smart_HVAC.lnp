@@ -1,0 +1,22 @@
+--cpu=Cortex-M4.fp
+".\objects\startup_stm32f40_41xxx.o"
+".\objects\main.o"
+".\objects\stm32f4xx_it.o"
+".\objects\system_stm32f4xx.o"
+".\objects\delay.o"
+".\objects\usart.o"
+".\objects\sys.o"
+".\objects\lcd.o"
+".\objects\led.o"
+".\objects\dht11.o"
+".\objects\key.o"
+".\objects\misc.o"
+".\objects\stm32f4xx_gpio.o"
+".\objects\stm32f4xx_rcc.o"
+".\objects\stm32f4xx_usart.o"
+".\objects\stm32f4xx_fsmc.o"
+".\objects\stm32f4xx_tim.o"
+--library_type=microlib --strict --scatter ".\Objects\Smart_HVAC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Smart_HVAC.map" -o .\Objects\Smart_HVAC.axf
